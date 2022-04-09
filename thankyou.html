@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="./styles/thankyou.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{{ .title }}</title>
 </head>
-    <body align="center">
-   
-    <font size="40" color="sky blue" face="helvetica, arial">
-        
-   <h1> <font color="sky blue" face="times-nav-highlight">THANK YOU SO MUCH FOR CONFESSING !!! </font></h1>
-    </font>
-    
-   <font size="10" COLOR="#000000" face="chalkboard" color="golden"> Ho Gya Mnn Halka??
-</font> <br>
 
-    <button  align="center" type="button"><a href="hue-hue.html"><font  face="chalkboard" color="green" size="5">YES</font></a></button>
-    <button align="center" type="button"><a href="sab_theek.html"><font face="chalkboard" color="red" size="5">NO</font></a></button>
-    
+<body align="center" bgcolor="#111827">
+    {{ template "header.html" .}}
+    <h1 class="text-4xl tracking-tight font-extrabold text-gray-500 sm:text-5xl md:text-6xl">
+        Thank You So much for confessing
+    </h1>
+
+    <font size="10" color="sky blue" face="chalkboard" color="golden"> Ho Gya Mnn Halka??
+    </font> <br>
+
+    <button align="center" type="button"><a href="hue-hue.html">
+            <font face="chalkboard" color="green" size="5">YES</font>
+        </a></button>
+    <button align="center" type="button"><a href="sab_theek.html">
+            <font face="chalkboard" color="red" size="5">NO</font>
+        </a></button>
+    {{ template "footer.html" .}}
 </body>
+
 </html>

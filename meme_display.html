@@ -12,7 +12,14 @@
 <body class="text-gray-400 bg-gray-900 body-font">
     {{ template "header.html" .}}
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
-        <div class="flex flex-wrap w-full">
+        <div>
+            <a href="/memes">
+                <button
+                    class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded content-end">Pay
+                    More</button>
+            </a>
+        </div>
+        <div class="flex flex-wrap w-full mx-auto">
             <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="{{ .meme }}"
                 alt="step">
         </div>
